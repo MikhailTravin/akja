@@ -1,0 +1,196 @@
+//Карточка товара
+.options {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	// .options__item
+	&__item {
+		position: relative;
+		cursor: pointer;
+		padding: 5px;
+	}
+	// .options__input
+	&__input {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		position: absolute;
+		&:checked + .options__label {
+			border: 1px solid $color_blue;
+		}
+	}
+	// .options__label
+	&__label {
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		background: $color_grey_light;
+		border: 1px solid #f0f1f2;
+		border-radius: 5px;
+	}
+	// .options__text
+	&__text {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: math.div(20, 14);
+		padding: 5px 10px;
+	}
+}
+.options-color {
+	.options__input {
+		&:checked + .options__label:after {
+			border: 1px solid $color_blue;
+		}
+		&:checked + .options__label {
+			border: 1px solid transparent;
+		}
+	}
+	.options__label {
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		background: transparent;
+		border: 1px solid transparent;
+		border-radius: 0px;
+		position: relative;
+		&:before {
+			content: "";
+			align-self: flex-start;
+			width: 32px;
+			height: 32px;
+			flex: 0 0 32px;
+			padding: 12px;
+			border-radius: 50%;
+			border: 4px solid $color_white;
+		}
+		&:after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			border: 1px solid #c8c9cc;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&:hover {
+			&::after {
+				content: "";
+				border: 1px solid $color_blue;
+			}
+		}
+	}
+	//Цвет
+	.options-orange {
+		&::before {
+			background: #ffb800;
+		}
+	}
+	.options-violet {
+		&::before {
+			background: #d02df9;
+		}
+	}
+	.options-green {
+		&::before {
+			background: #2bd028;
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+//Оформление заказа
+.info-checkout-options {
+	// .info-checkout-options__option
+	&__option {
+		flex: 0 1 50%;
+		padding: 10px;
+		display: flex;
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+			padding: 10px 0px;
+		}
+	}
+	// .info-checkout-options__item
+	&__item {
+		border: 1px solid $color_grey_light_2;
+		border-radius: 3px;
+		padding: 15px 20px;
+		width: 100%;
+		position: relative;
+		cursor: pointer;
+	}
+	// .info-checkout-options__input
+	&__input {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		position: absolute;
+		&:checked + .info-checkout-options__label:before {
+		}
+		&:checked + .info-checkout-options__label:after {
+			border: 3px solid $color_blue;
+		}
+	}
+	// .info-checkout-options__label
+	&__label {
+		display: inline-flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		cursor: pointer;
+		width: 100%;
+		justify-content: space-between;
+		height: 100%;
+		&:before {
+			content: "";
+			width: 16px;
+			height: 16px;
+			flex: 0 0 16px;
+			border: 3px solid $color_grey_light_3;
+			border-radius: 50%;
+		}
+		&:after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			transform: translate(0, -50%);
+			border-radius: 50%;
+			border: 3px solid $color_grey_light_3;
+		}
+		/*
+		&:hover {
+			&::after {
+				content: "";
+				border: 3px solid $color_blue;
+			}
+		}
+		*/
+	}
+	// .info-checkout-options__text
+	&__text {
+		display: flex;
+		flex-direction: column;
+		margin: 0px 20px 0px 0px;
+	}
+	// .info-checkout-options__title
+	&__title {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: math.div(20, 14);
+		margin: 0px 0px 5px 0px;
+	}
+	// .info-checkout-options__subtitle
+	&__subtitle {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: math.div(18, 12);
+		color: $color_grey;
+	}
+}

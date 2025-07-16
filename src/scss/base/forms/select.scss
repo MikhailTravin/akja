@@ -1,0 +1,121 @@
+// <SELECT>
+// Снипет (HTML): sel
+.select {
+	position: relative;
+	// .select__body
+	&__body {
+		position: relative;
+		min-width: 125px;
+	}
+	// .select__title
+	&__title {
+		display: flex;
+		color: inherit;
+		text-align: left;
+		background-color: transparent;
+		cursor: pointer;
+		width: 100%;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: math.div(17, 12);
+		background-color: $color_white;
+		border-radius: 5px;
+		padding: 0px 10px 0px 10px;
+	}
+	// .select__content
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		align-items: center;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		&::before {
+			width: 16px;
+			height: 16px;
+			font-weight: 700;
+			font-size: 10px;
+			transform: rotate(90deg);
+			margin: 0px 0px 0px 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.3s ease 0s;
+		}
+	}
+	// .select__value
+	&__value {
+		display: flex;
+		align-items: center;
+		height: 17px;
+		> * {
+			flex: 1 1 auto;
+		}
+	}
+	// .select__text
+	&__text {
+		flex: 1 1 auto;
+	}
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+	// .select__options
+	&__options {
+		color: $mainColor;
+		position: absolute;
+		z-index: 5;
+		top: 18px;
+		border-radius: 0 0 5px 5px;
+		min-width: 100%;
+		left: 0;
+		background-color: $color_white;
+		border-top: 0;
+		border-top: 0;
+		padding: 7px 10px 10px 10px;
+		margin: -2px 0px;
+	}
+	// .select__scroll
+	&__scroll {
+		overflow-y: auto;
+		overflow-x: hidden;
+		// Максимальная высота
+		max-height: 200px;
+		// Стили скроллбара
+		.simplebar-scrollbar {
+			&::before {
+				//opacity: 1;
+			}
+		}
+	}
+	// .select__option
+	&__option {
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: math.div(17, 12);
+		background-color: $color_white;
+		color: inherit;
+		padding: 2px 0px;
+		transition: all 0.3s ease 0s;
+		&._select-selected {
+			background-color: #eee;
+		}
+		&:hover {
+			color: $color_blue;
+		}
+	}
+	// Состояния селекта
+	&._select-open {
+		z-index: 5;
+		.select__content {
+			&::before {
+				transform: rotate(-90deg);
+			}
+		}
+	}
+}

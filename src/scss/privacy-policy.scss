@@ -1,0 +1,32 @@
+.page {
+	// .page__privacy-police
+	&__privacy-police {
+		margin: 0px 0px 40px 0px;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+}
+
+.privacy-police {
+	// .privacy-police__container
+	&__container {
+	}
+	// .privacy-police__h1
+	&__h1 {
+		word-wrap: break-word;
+	}
+	// .privacy-police__text
+	&__text {
+		max-width: 780px;
+		p {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: math.div(20, 14);
+			margin: 0px 0px 12px 0px;
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+}

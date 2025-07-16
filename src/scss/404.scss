@@ -1,0 +1,92 @@
+.page {
+	// .page__error
+	&__error {
+		margin: 10px 0px 80px 0px;
+		@media (max-width: $mobile) {
+			margin: 10px 0px 30px 0px;
+		}
+	}
+}
+
+.error {
+	// .error__container
+	&__container {
+	}
+	// .error__content
+	&__content {
+		background: $color_blue;
+		border-radius: 5px;
+		padding: 80px 100px;
+		display: flex;
+		align-items: center;
+		@media (max-width: $pc) {
+			padding: 80px 50px;
+		}
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			justify-content: center;
+		}
+		@media (max-width: $mobile) {
+			padding: 30px;
+		}
+	}
+	// .error__image
+	&__image {
+		flex: 0 1 380px;
+		margin: 0px 120px 0px 0px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@media (max-width: $pc) {
+			margin: 0px 60px 0px 0px;
+		}
+		@media (max-width: $tablet) {
+			flex: 1 1 auto;
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	// .error__body
+	&__body {
+		flex: 0 1 480px;
+		@media (max-width: $tablet) {
+			flex: 1 1 auto;
+		}
+	}
+	// .error__title
+	&__title {
+		font-weight: 600;
+		font-size: 44px;
+		line-height: math.div(62, 44);
+		color: $color_white;
+		margin: 0px 0px 20px 0px;
+		@media (max-width: $mobile) {
+			font-size: 40px;
+			line-height: math.div(56, 40);
+		}
+	}
+	// .error__subtitle
+	&__subtitle {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: math.div(20, 14);
+		color: $color_white;
+		margin: 0px 0px 80px 0px;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	// .error__button
+	&__button {
+		width: 280px;
+		background: $color_white;
+		color: $mainColor;
+		&:hover {
+			background: $color_grey_light_2;
+		}
+		@media (max-width: $mobileSmall) {
+			width: 100%;
+		}
+	}
+}

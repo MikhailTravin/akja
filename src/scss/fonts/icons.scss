@@ -1,0 +1,146 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-ruso:before {
+	content: "\e92a";
+}
+._icon-pc-s:before {
+	content: "\e91b";
+}
+._icon-server-s:before {
+	content: "\e91c";
+}
+._icon-mouse-s:before {
+	content: "\e91d";
+}
+._icon-notebook-acc-s:before {
+	content: "\e91e";
+}
+._icon-notebook-s:before {
+	content: "\e91f";
+}
+._icon-repeir-s:before {
+	content: "\e920";
+}
+._icon-camera-cctv-s:before {
+	content: "\e921";
+}
+._icon-shredder-s:before {
+	content: "\e922";
+}
+._icon-power-ups-s:before {
+	content: "\e923";
+}
+._icon-cash-register-s:before {
+	content: "\e924";
+}
+._icon-barcode-read-s:before {
+	content: "\e925";
+}
+._icon-usb-drive-s:before {
+	content: "\e926";
+}
+._icon-audio-s:before {
+	content: "\e927";
+}
+._icon-satellite-dish-s:before {
+	content: "\e928";
+}
+._icon-printer-s:before {
+	content: "\e929";
+}
+._icon-call:before {
+	content: "\e91a";
+}
+._icon-catalog-search:before {
+	content: "\e900";
+}
+._icon-home:before {
+	content: "\e901";
+}
+._icon-status-serves:before {
+	content: "\e902";
+}
+._icon-telegram:before {
+	content: "\e903";
+}
+._icon-triangle-exclamation:before {
+	content: "\e904";
+}
+._icon-viber:before {
+	content: "\e905";
+}
+._icon-vk:before {
+	content: "\e906";
+}
+._icon-whatsapp:before {
+	content: "\e907";
+}
+._icon-youtube:before {
+	content: "\e908";
+}
+._icon-arrow:before {
+	content: "\e909";
+}
+._icon-arrow-right-arrow-left:before {
+	content: "\e90a";
+}
+._icon-basket:before {
+	content: "\e90b";
+}
+._icon-call-headset:before {
+	content: "\e90c";
+}
+._icon-cart-plus:before {
+	content: "\e90d";
+}
+._icon-chat:before {
+	content: "\e90e";
+}
+._icon-check:before {
+	content: "\e90f";
+}
+._icon-close:before {
+	content: "\e910";
+}
+._icon-filter:before {
+	content: "\e911";
+}
+._icon-heart:before {
+	content: "\e912";
+}
+._icon-instagram:before {
+	content: "\e913";
+}
+._icon-mail:before {
+	content: "\e914";
+}
+._icon-pc:before {
+	content: "\e915";
+}
+._icon-phone-old:before {
+	content: "\e916";
+}
+._icon-plane-engines:before {
+	content: "\e917";
+}
+._icon-search:before {
+	content: "\e918";
+}
+._icon-sort-tile:before {
+	content: "\e919";
+}

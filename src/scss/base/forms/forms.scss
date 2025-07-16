@@ -1,0 +1,30 @@
+//<FORM>
+// Снипет (HTML):
+input._form-error {
+	border: 1px solid rgb(198, 9, 9);
+}
+//</FORM>
+
+// <BUTTONS>
+// Снипет (HTML): btn
+@import "button";
+
+// <CHECK>
+// Снипет (HTML): chk
+@import "checkbox";
+
+// <RADIO>
+// Снипет (HTML): opt
+@import "radio";
+
+// <SELECT>
+// Снипет (HTML): sel
+@import "select";
+
+// <QUANTITY>
+// Снипет (HTML): qa
+@import "quantity";
+
+// <RANGE>
+// Снипет (HTML):
+@import "range";

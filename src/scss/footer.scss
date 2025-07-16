@@ -1,0 +1,338 @@
+.footer {
+	@media (max-width: $mobile) {
+		margin: 0px 0px 69px 0px;
+	}
+	// .footer__top
+	&__top {
+		background: $color_grey_light;
+		padding: 80px 0px 50px 0px;
+		@media (max-width: $mobile) {
+			padding: 40px 0px 40px 0px;
+		}
+	}
+	// .footer__bottom
+	&__bottom {
+		background: #ebecf0;
+		padding: 15px 0px 15px 0px;
+		@media (max-width: $mobile) {
+			padding: 30px 0px 30px 0px;
+		}
+	}
+}
+
+.top-footer {
+	// .top-footer__container
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+	}
+	// .top-footer__left
+	&__left {
+		flex: 0 1 180px;
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 0px 0px 23px 0px;
+		}
+	}
+	// .top-footer__logo
+	&__logo {
+		display: block;
+		margin: 0px 0px 20px 0px;
+		img {
+			height: 47px;
+			width: auto;
+		}
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+	// .top-footer__sublogo-text
+	&__sublogo-text {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: math.div(18, 12);
+		margin: 0px 0px 20px 0px;
+		@media (max-width: $mobile) {
+			text-align: center;
+		}
+	}
+	// .top-footer__socials-se
+	&__socials-se {
+		display: flex;
+		margin: -5px;
+	}
+	// .top-footer__social-se
+	&__social-se {
+		padding: 5px;
+		&::before {
+			transition: all 0.3s ease 0s;
+			font-size: 24px;
+			color: $color_grey;
+		}
+		&:hover {
+			&::before {
+				color: $color_blue;
+			}
+		}
+	}
+	// .top-footer__center
+	&__center {
+		display: flex;
+		justify-content: space-between;
+		flex: 0 1 510px;
+		margin: 0px 35px 0px 35px;
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+			margin: 0px 0px 40px 0px;
+		}
+	}
+	// .top-footer__body
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px -27px;
+		@media (max-width: $mobileSmall) {
+			margin: -15px -13px;
+			width: 100%;
+		}
+	}
+	// .top-footer__column
+	&__column {
+		flex: 0 1 auto;
+		padding: 15px 27px;
+		ul {
+			display: flex;
+			flex-direction: column;
+			margin: -3px 0px;
+			li {
+				padding: 3px 0px;
+				a {
+					font-weight: 400;
+					font-size: 12px;
+					line-height: math.div(18, 12);
+					transition: all 0.3s ease 0s;
+					&:hover {
+						color: $color_blue;
+					}
+				}
+			}
+		}
+		@media (max-width: $mobileSmall) {
+			flex: 0 1 50%;
+			padding: 15px 13px;
+		}
+	}
+	// .top-footer__title-list
+	&__title-list {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: math.div(20, 14);
+		margin: 0px 0px 10px 0px;
+	}
+	// .top-footer__right
+	&__right {
+		flex: 0 1 280px;
+		@media (max-width: $pc) {
+			flex: 0 1 auto;
+		}
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+		}
+	}
+}
+
+.write-top-footer {
+	// .write-top-footer__messages
+	&__messages {
+		margin: -5px 0px;
+		padding: 0px 0px 20px 0px;
+	}
+	// .write-top-footer__message
+	&__message {
+		padding: 5px 0px;
+		a {
+			display: flex;
+			align-items: center;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: math.div(20, 14);
+			transition: all 0.3s ease 0s;
+			&::before {
+				font-size: 17px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 36px;
+				height: 36px;
+				background: #e6e7eb;
+				padding: 18px;
+				border-radius: 3px;
+				margin: 0px 15px 0px 0px;
+				color: $mainColor;
+			}
+			&._icon-chat {
+				&::before {
+					background: #7ac079;
+					color: $color_white;
+				}
+			}
+			&._icon-mail {
+				&::before {
+					background: #ebac88;
+					color: $color_white;
+				}
+			}
+			&:hover {
+				color: $color_blue;
+			}
+		}
+	}
+	// .write-top-footer__socials
+	&__socials {
+	}
+	// .write-top-footer__social-title
+	&__social-title {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: math.div(17, 12);
+		margin: 0px 0px 10px 0px;
+	}
+	// .write-top-footer__social
+	&__social {
+		display: flex;
+		margin: -7px;
+		a {
+			padding: 7px;
+			transition: all 0.3s ease 0s;
+			&::before {
+				font-size: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 36px;
+				height: 36px;
+				background: #635daa;
+				border-radius: 3px;
+				color: $color_white;
+				padding: 18px;
+			}
+			&._icon-telegram {
+				&::before {
+					background: #27a7e7;
+				}
+			}
+			&._icon-whatsapp {
+				&::before {
+					background: #2ccc49;
+				}
+			}
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}
+
+.bottom-footer {
+	// .bottom-footer__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+	// .bottom-footer__left
+	&__left {
+		display: flex;
+		flex-wrap: wrap;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	// .bottom-footer__pay
+	&__pay {
+		border-radius: 3px;
+		background: $color_white;
+		padding: 6px;
+		width: 40px;
+		height: 25px;
+		margin: 0px 5px 0px 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		picture {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: auto;
+				height: 55%;
+				object-fit: cover;
+				display: block;
+			}
+		}
+		img {
+			width: auto;
+			height: 80%;
+			object-fit: cover;
+			display: block;
+		}
+	}
+	// .bottom-footer__center
+	&__center {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: math.div(18, 12);
+		margin: 0px 20px 0px 20px;
+		color: $color_grey;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: $color_blue;
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	// .bottom-footer__right
+	&__right {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: math.div(18, 12);
+		color: $color_grey;
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+		a {
+			display: flex;
+			margin: 0px 0px 0px 10px;
+			&::before {
+				transition: all 0.3s ease 0s;
+				font-size: 11px;
+				color: $color_grey;
+			}
+			&:hover {
+				&::before {
+					color: $mainColor;
+				}
+			}
+		}
+
+		@media (max-width: $mobile) {
+			order: 4;
+		}
+	}
+}

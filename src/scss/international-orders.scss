@@ -1,0 +1,168 @@
+.page {
+	// .page__international-orders
+	&__international-orders {
+		margin: 0px 0px 40px 0px;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+}
+
+.international-orders {
+	// .international-orders__container
+	&__container {
+	}
+	// .international-orders__content
+	&__content {
+		max-width: 800px;
+	}
+	// .international-orders__h1
+	&__h1 {
+		margin: 0px 0px 10px 0px;
+	}
+	// .international-orders__subtitle
+	&__subtitle {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: math.div(20, 14);
+		margin: 0px 0px 30px 0px;
+	}
+}
+
+.info-checkout-order {
+	// .info-checkout-order__photo
+	&__photo {
+		margin: 20px 0px 0px 0px;
+	}
+}
+.photo-checkout {
+	// .photo-checkout__block
+	&__block {
+		position: relative;
+		cursor: pointer;
+		display: flex;
+		width: 100%;
+		overflow: auto;
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+		scrollbar-width: none; /* Firefox */
+		&::-webkit-scrollbar {
+			display: none; /* Safari and Chrome */
+		}
+	}
+	// .photo-checkout__input-file-img
+	&__input-file-img {
+		display: flex;
+		width: 0;
+		height: 0;
+		border-radius: 5px;
+		&._active {
+			width: 100%;
+			height: 120px;
+		}
+		span {
+			display: block;
+			position: relative;
+			width: 165px;
+			height: 120px;
+			margin: 0px 20px 0px 0px;
+			@media (max-width: $mobile) {
+				width: 120px;
+				height: 100px;
+				margin: 0px 10px 0px 0px;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 5px;
+			}
+			&:hover {
+				.photo-checkout__input-file-remove {
+					opacity: 1;
+					pointer-events: auto;
+				}
+			}
+		}
+	}
+	// .photo-checkout__input-file
+	&__input-file {
+		cursor: pointer;
+		display: flex;
+		flex-direction: row-reverse;
+		input {
+			cursor: pointer;
+			min-width: 165px;
+			height: 120px;
+			opacity: 0;
+			position: absolute;
+			border-radius: 5px;
+			@media (max-width: $mobile) {
+				width: 120px;
+				height: 100px;
+			}
+		}
+		label {
+			display: inline-flex;
+			align-items: center;
+			cursor: pointer;
+			min-width: 165px;
+			height: 120px;
+			border: 1px dashed $color_grey_light_3;
+			border-radius: 5px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: math.div(20, 14);
+			background: $color_white;
+			transition: all 0.3s ease 0s;
+			color: $mainColor;
+			&::before {
+				content: "+";
+				font-size: 18px;
+				width: 15px;
+				height: 15px;
+				margin: 0px 0px 10px 0px;
+				color: $mainColor;
+			}
+			&:hover {
+				background: $color_blue;
+			}
+			@media (max-width: $mobile) {
+				min-width: 120px;
+				height: 100px;
+			}
+		}
+	}
+	// .photo-checkout__input-file-remove
+	&__input-file-remove {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+		border-radius: 5px;
+		background: linear-gradient(0deg, rgba(54, 108, 217, 0.8), rgba(54, 108, 217, 0.8));
+		font-weight: 500;
+		font-size: 14px;
+		line-height: math.div(20, 14);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: $color_white;
+		z-index: 10;
+		opacity: 0;
+		transition: opacity 0.3s ease 0s;
+		pointer-events: none;
+		&::before {
+			color: $color_white;
+			font-size: 16px;
+			margin: 0px 10px 0px 0px;
+		}
+	}
+}
