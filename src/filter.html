@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Фильтр"
+	})
+	<body class="filter">
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="breadcrambs">
+					<div class="breadcrambs__container">
+						<div class="breadcrambs__content">
+							<ul>
+								<li><a href="#">Главная<span>/</span></a></li>
+								<li><a href="#">Каталог<span>/</span></a></li>
+								<li><a href="#">Телевизоры и аксессуары<span>/</span></a></li>
+								<li><span>Телевизоры</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="page__filter filter">
+					<div class="filter__container">
+						<h1 class="filter__h1 h1">Телевизоры</h1>
+						<div class="filter__body">
+							<div class="filter__filter-block">
+								<div class="filter__filter-block-mob filter-block-mob">
+									<div class="filter-block-mob__title">
+										Фильтры
+										<span class="filter-block-mob__close _icon-close"></span>
+									</div>
+									<div class="filter-block-mob__clear"><span>Отчистить фильтры</span></div>
+									<div class="filter-block-mob__button">
+										<a href="#">Показать 6 522 товара</a>
+									</div>
+								</div>
+								<div class="filter__filter-block-spollers">
+									<div data-spollers class="filter__spollers spollers-filter">
+										<div class="spollers-filter__item">
+											<button type="button" data-spoller class="spollers-filter__title _icon-arrow">Цена, ₽</button>
+											<div class="spollers-filter__body">
+												<div class="spollers-filter__rating">
+													<div class="rating__values">
+														<div class="rating__value">
+															<input id="price-start" type="text">
+															<label for="price-start" class="price-lbl">от<span>4 586</span></label>
+														</div>
+														<div class="rating__value">
+															<input id="price-end" type="text">
+															<label for="price-end" class="price-lbl">до<span>344 586</span></label>
+														</div>
+													</div>
+													<div class="rating__range"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-spollers class="filter__spollers spollers-filter">
+										<div class="spollers-filter__item">
+											<button type="button" data-spoller class="spollers-filter__title _icon-arrow">Акции</button>
+											<div class="spollers-filter__body">
+												<div data-showmore class="spollers-filter__showmore showmore-spollers-filter">
+													<div data-showmore-content="185" class="showmore-spollers-filter__content">
+														<div class="showmore-spollers-filter__checkboxes">
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_1" class="checkbox__label">
+																	<span class="checkbox__text">Доступные в рассрочку</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">42</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_2" class="checkbox__input" type="checkbox" value="2" name="form[]">
+																<label for="c_2" class="checkbox__label">
+																	<span class="checkbox__text">Скидка до 50%</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">102</span>
+																</label>
+															</div>
+														</div>
+													</div>
+													<button hidden data-showmore-button type="button" class="showmore-spollers-filter__more">
+														<span>Показать еще</span>
+														<span>Скрыть</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-spollers class="filter__spollers spollers-filter">
+										<div class="spollers-filter__item">
+											<button type="button" data-spoller class="spollers-filter__title _icon-arrow">Производители</button>
+											<div class="spollers-filter__body">
+												<div data-showmore class="spollers-filter__showmore showmore-spollers-filter">
+													<div data-showmore-content="185" class="showmore-spollers-filter__content">
+														<div class="showmore-spollers-filter__checkboxes">
+															<div class="showmore-spollers-filter__checkbox checkbox">
+																<input id="c_3" class="checkbox__input" type="checkbox" value="3" name="form[1]">
+																<label for="c_3" class="checkbox__label">
+																	<span class="checkbox__text">Samsung</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">12</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox checkbox">
+																<input id="c_4" class="checkbox__input" type="checkbox" value="4" name="form[1]">
+																<label for="c_4" class="checkbox__label">
+																	<span class="checkbox__text">Lg</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">10</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox checkbox">
+																<input id="c_5" class="checkbox__input" type="checkbox" value="5" name="form[1]">
+																<label for="c_5" class="checkbox__label">
+																	<span class="checkbox__text">Sony</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">6</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox checkbox">
+																<input disabled id="c_6" class="checkbox__input" type="checkbox" value="6" name="form[1]">
+																<label for="c_6" class="checkbox__label">
+																	<span class="checkbox__text">Philips</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">0</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_7" class="checkbox__input" type="checkbox" value="7" name="form[1]">
+																<label for="c_7" class="checkbox__label">
+																	<span class="checkbox__text">Hundai</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">4</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_8" class="checkbox__input" type="checkbox" value="8" name="form[1]">
+																<label for="c_8" class="checkbox__label">
+																	<span class="checkbox__text">Hair</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">12</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_9" class="checkbox__input" type="checkbox" value="9" name="form[1]">
+																<label for="c_9" class="checkbox__label">
+																	<span class="checkbox__text">Supra</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">17</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_10" class="checkbox__input" type="checkbox" value="10" name="form[1]">
+																<label for="c_10" class="checkbox__label">
+																	<span class="checkbox__text">Supra</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">17</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_11" class="checkbox__input" type="checkbox" value="11" name="form[1]">
+																<label for="c_11" class="checkbox__label">
+																	<span class="checkbox__text">Supra</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">17</span>
+																</label>
+															</div>
+														</div>
+													</div>
+													<button hidden data-showmore-button type="button" class="showmore-spollers-filter__more">
+														<span>Показать еще</span>
+														<span>Скрыть</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-spollers class="filter__spollers spollers-filter">
+										<div class="spollers-filter__item">
+											<button type="button" data-spoller class="spollers-filter__title _icon-arrow">Диагональ</button>
+											<div class="spollers-filter__body">
+												<div data-showmore class="spollers-filter__showmore showmore-spollers-filter">
+													<div data-showmore-content="185" class="showmore-spollers-filter__content">
+														<div class="showmore-spollers-filter__checkboxes">
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_12" class="checkbox__input" type="checkbox" value="12" name="form[2]">
+																<label for="c_12" class="checkbox__label">
+																	<span class="checkbox__text">Hundai</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">42</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_13" class="checkbox__input" type="checkbox" value="13" name="form[2]">
+																<label for="c_13" class="checkbox__label">
+																	<span class="checkbox__text">Hundai</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">102</span>
+																</label>
+															</div>
+														</div>
+													</div>
+													<button hidden data-showmore-button type="button" class="showmore-spollers-filter__more">
+														<span>Показать еще</span>
+														<span>Скрыть</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filter__content">
+								<div class="filter__content-block">
+									<div class="filter__tabs tabs-filter">
+										<div class="tabs-filter__top">
+											<div class="tabs-filter__filter-block-icon _icon-filter"></div>
+											<div class="tabs-filter__sorted sorted-filter">
+												<div class="sorted-filter__title">Сортировать:</div>
+												<div class="sorted-filter__body">
+													<div class="sorted-filter__column _active">
+														<span>По популярности</span>
+													</div>
+													<div class="sorted-filter__column">
+														<a href="#">По возрастанию цены</a>
+													</div>
+													<div class="sorted-filter__column">
+														<a href="#">По убыванию цены</a>
+													</div>
+													<div class="sorted-filter__column">
+														<a href="#">По размеру скидки</a>
+													</div>
+													<div class="sorted-filter__column">
+														<a href="#">По новизне</a>
+													</div>
+												</div>
+											</div>
+											<div class="tabs-filter__select">
+												<select name="form[]">
+													<option value="1" selected>По популярности</option>
+													<option value="2">По возрастанию цены</option>
+													<option value="3">По убыванию цены</option>
+													<option value="4">По размеру скидки</option>
+													<option value="5">По новизне</option>
+												</select>
+											</div>
+											<nav class="tabs-filter__navigation">
+												<button type="button" class="tabs-filter__title _icon-sort-tile _tab-active"></button>
+												<button type="button" class="tabs-filter__title">
+													<div class="tabs-filter__sort-list"><span></span></div>
+												</button>
+											</nav>
+										</div>
+										<div class="tabs-filter__content">
+											<div class="tabs-filter__body">
+												<div class="tabs-filter__slides">
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<a href="#" class="slide-product__image">
+																<img data-src="../img/product/product-2.webp" srcset="../img/product/product-2.webp 1x, ../img/product/product-2@2x.webp 2x" alt>
+															</a>
+															<div class="slide-product__content">
+																<a href="#" class="slide-product__title">Переходник UGREEN MD115 Mini DP/HDMI + VGA Converter</a>
+																<div class="slide-product__content-bottom">
+																	<div class="slide-product__top">
+																		<div class="slide-product__code">Код: 20421</div>
+																		<div data-showmore class="slide-product__showmore">
+																			<div data-showmore-content="90" class="slide-product__showmore-content">
+																				Материнская плата: <span>B660M;</span>
+																				Процессор:<span>Intel Core i3-12100F;</span>
+																				Охлаждение:<span>Air TDP 130 Вт;</span>
+																				Оперативная память:<span>16 Гб D4 3200 (2x8);</span>
+																				Видео-карта: <span>NVIDIA GeForce RTX 3050 8 Гб;</span>
+																				SSD: <span>1 Tб M.2;</span>
+																				Корпус: <span>Zalman T6 Black;</span>
+																				Блок питания: <span>500 Вт;</span>
+																			</div>
+																			<button hidden data-showmore-button type="button" class="slide-product__more">
+																				<span class="_icon-arrow"><div>Читать полностью</div></span>
+																				<span class="_icon-arrow"><div>Скрыть</div></span>
+																			</button>
+																		</div>
+																	</div>
+																	<div class="slide-product__bottom">
+																		<div class="slide-product__stock _icon-check">В наличии</div>
+																		<div class="slide-product__totals">
+																			<div class="slide-product__total">
+																				<div class="slide-product__price-new">12 562 ₽</div>
+																			</div>
+																			<div class="slide-product__basket">
+																				<a href="#" class="slide-product__button _icon-cart-plus">
+																					<span>Добавить в корзину</span>
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="slide-product__shadow"></div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<a href="#" class="slide-product__image">
+																<img data-src="../img/product/product-1.webp" srcset="../img/product/product-1.webp 1x, ../img/product/product-1@2x.webp 2x" alt>
+															</a>
+															<div class="slide-product__content">
+																<a href="#" class="slide-product__title">Переходник UGREEN MD115 Mini DP/HDMI + VGA Converter</a>
+																<div class="slide-product__content-bottom">
+																	<div class="slide-product__top">
+																		<div class="slide-product__code">Код: 20421</div>
+																		<div data-showmore class="slide-product__showmore">
+																			<div data-showmore-content="90" class="slide-product__showmore-content">
+																				Материнская плата: <span>B660M;</span>
+																				Процессор:<span>Intel Core i3-12100F;</span>
+																				Охлаждение:<span>Air TDP 130 Вт;</span>
+																				Оперативная память:<span>16 Гб D4 3200 (2x8);</span>
+																				Видео-карта: <span>NVIDIA GeForce RTX 3050 8 Гб;</span>
+																				SSD: <span>1 Tб M.2;</span>
+																				Корпус: <span>Zalman T6 Black;</span>
+																				Блок питания: <span>500 Вт;</span>
+																			</div>
+																			<button hidden data-showmore-button type="button" class="slide-product__more">
+																				<span class="_icon-arrow"><div>Читать полностью</div></span>
+																				<span class="_icon-arrow"><div>Скрыть</div></span>
+																			</button>
+																		</div>
+																	</div>
+																	<div class="slide-product__bottom">
+																		<div class="slide-product__stock _icon-check">В наличии</div>
+																		<div class="slide-product__totals">
+																			<div class="slide-product__total">
+																				<div class="slide-product__price-new">12 562 ₽</div>
+																				<div class="slide-product__price-old">
+																					<s>15 999 ₽</s>
+																					<div class="slide-product__sale">-50%</div>
+																				</div>
+																			</div>
+																			<div class="slide-product__basket">
+																				<a href="#" class="slide-product__button _icon-cart-plus">
+																					<span>Добавить в корзину</span>
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="slide-product__time-count">
+															<div class="time-count__title">Акция</div>
+															<div class="time-count__content">
+																<div class="time-count__item time-count__days">
+																	<div class="time-count__val">00</div>
+																	<div class="time-count__text">д</div>
+																</div>
+																<div class="time-count__separator">:</div>
+																<div class="time-count__item time-count__hours">
+																	<div class="time-count__val">00</div>
+																	<div class="time-count__text">ч</div>
+																</div>
+																<div class="time-count__separator">:</div>
+																<div class="time-count__item time-count__minutes">
+																	<div class="time-count__val">00</div>
+																	<div class="time-count__text">м</div>
+																</div>
+																<div class="time-count__separator">:</div>
+																<div class="time-count__item time-count__seconds">
+																	<div class="time-count__val">00</div>
+																	<div class="time-count__text">с</div>
+																</div>
+															</div>
+														</div>
+														<div class="slide-product__shadow"></div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<a href="#" class="slide-product__image">
+																<img data-src="../img/product/product-3.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x" alt>
+															</a>
+															<div class="slide-product__content">
+																<a href="#" class="slide-product__title">Переходник UGREEN MD115 Mini DP/HDMI + VGA Converter</a>
+																<div class="slide-product__content-bottom">
+																	<div class="slide-product__top">
+																		<div class="slide-product__code">Код: 20421</div>
+																		<div data-showmore class="slide-product__showmore">
+																			<div data-showmore-content="90" class="slide-product__showmore-content">
+																				Материнская плата: <span>B660M;</span>
+																				Процессор:<span>Intel Core i3-12100F;</span>
+																				Охлаждение:<span>Air TDP 130 Вт;</span>
+																				Оперативная память:<span>16 Гб D4 3200 (2x8);</span>
+																				Видео-карта: <span>NVIDIA GeForce RTX 3050 8 Гб;</span>
+																				SSD: <span>1 Tб M.2;</span>
+																				Корпус: <span>Zalman T6 Black;</span>
+																				Блок питания: <span>500 Вт;</span>
+																			</div>
+																			<button hidden data-showmore-button type="button" class="slide-product__more">
+																				<span class="_icon-arrow"><div>Читать полностью</div></span>
+																				<span class="_icon-arrow"><div>Скрыть</div></span>
+																			</button>
+																		</div>
+																	</div>
+																	<div class="slide-product__bottom">
+																		<div class="slide-product__stock _icon-check">В наличии</div>
+																		<div class="slide-product__totals">
+																			<div class="slide-product__total">
+																				<div class="slide-product__price-new">12 562 ₽</div>
+																			</div>
+																			<div class="slide-product__basket">
+																				<a href="#" class="slide-product__button _icon-cart-plus">
+																					<span>Добавить в корзину</span>
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="slide-product__shadow"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter__pagination pagination-filter">
+									<span class="pagination-filter__arrow">
+										<span class="pagination-filter__arrow-prev _icon-arrow"></span>
+									</span>
+									<span class="pagination-filter__number _active-pagination">1</span>
+									<a href="#" class="pagination-filter__number">2</a>
+									<a href="#" class="pagination-filter__number">3</a>
+									<span class="pagination-filter__number number-dots">...</span>
+									<a href="#" class="pagination-filter__number">24</a>
+									<a href="#" class="pagination-filter__number">25</a>
+									<a href="#" class="pagination-filter__number">26</a>
+									<a href="#" class="pagination-filter__arrow">
+										<span class="pagination-filter__arrow-next _icon-arrow"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

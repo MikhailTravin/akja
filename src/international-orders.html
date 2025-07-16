@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Международные заказы"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="breadcrambs">
+					<div class="breadcrambs__container">
+						<div class="breadcrambs__content">
+							<ul>
+								<li><a href="#">Главная<span>/</span></a></li>
+								<li><span>Международные заказы</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="page__international-orders international-orders">
+					<div class="international-orders__container">
+						<div class="international-orders__content">
+							<h1 class="international-orders__h1 h1">Международные заказы</h1>
+							<div class="international-orders__subtitle">Учитывая ключевые сценарии поведения, начало повседневной работы по формированию позиции играет важную роль в формировании анализа существующих паттернов поведения. Равным образом, синтетическое тестирование в значительной степени обусловливает важность глубокомысленных рассуждений.</div>
+							<div class="order__left left-order">
+								<div class="left-order__checkout checkout-left-order">
+									<form action="#" class="checkout-left-order__forms">
+										<div class="checkout-left-order__info info-checkout-order">
+											<div class="info-checkout-order__column">
+												<h4 class="info-checkout-order__h4 h4">1. Контактная информация</h4>
+												<div class="info-checkout-order__inputs">
+													<div class="info-checkout-order__input">
+														<input data-validate type="name" name="form[]" placeholder="Имя*">
+													</div>
+													<div class="info-checkout-order__input">
+														<input type="sity" name="form[]" placeholder="Город">
+													</div>
+													<div class="info-checkout-order__input">
+														<input type="email" name="form[]" placeholder="Электронная почта">
+													</div>
+													<div class="info-checkout-order__input">
+														<input data-validate placeholder="+993" value="+993" id="tel" type="text" name="form[]">
+													</div>
+												</div>
+											</div>
+											<div class="info-checkout-order__column">
+												<h4 class="info-checkout-order__h4 h4">2. Информация о товаре</h4>
+												<div class="info-checkout-order__inputs">
+													<div class="info-checkout-order__input">
+														<input data-validate type="text" name="form[2]" placeholder="Название товара*">
+													</div>
+													<div class="info-checkout-order__input">
+														<input type="text" name="form[2]" placeholder="Модель товара">
+													</div>
+												</div>
+												<div class="info-checkout-order__photo photo-checkout">
+													<div class="photo-checkout__block">
+														<div class="photo-checkout__input-file">
+															<input type="file" id="file" name="file" class="file">
+															<label>Фотография<br> товара</label>
+															<div class="photo-checkout__input-file-img"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="info-checkout-order__column">
+												<h4 class="info-checkout-order__h4 h4">3. Дополнительная информация</h4>
+												<div class="info-checkout-order__textarea">
+													<textarea placeholder="Комментарий к заказу"></textarea>
+												</div>
+												<a href="#" class="info-checkout-order__button button">Оформить заказ</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

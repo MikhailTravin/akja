@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Оформление заказа"
+	})
+	<body class="checkout">
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="breadcrambs">
+					<div class="breadcrambs__container">
+						<div class="breadcrambs__content">
+							<ul>
+								<li><a href="#">Главная<span>/</span></a></li>
+								<li><span>Оформление заказа</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="page__order order">
+					<div class="order__container">
+						<h1 class="order__h1 h1">Оформление заказа</h1>
+						<div class="order__body">
+							<div class="order__left left-order">
+								<div class="left-order__checkout checkout-left-order">
+									<form action="#" class="checkout-left-order__forms">
+										<div class="checkout-left-order__products product-checkout-order">
+											<div class="product-checkout-order__column">
+												<div class="product-checkout-order__item">
+													<div class="product-checkout-order__left">
+														<a href="#" class="product-checkout-order__image">
+															<img data-src="../img/product/product-2.webp" srcset="../img/product/product-2.webp 1x, ../img/product/product-2@2x.webp 2x" alt="">
+														</a>
+														<div class="product-checkout-order__text">
+															<a href="#" class="product-checkout-order__title">Переходник UGREEN MD115 Mini DP/HDMI + VGA Converter</a>
+															<div class="product-checkout-order__code">Код: 20421</div>
+														</div>
+													</div>
+													<div class="product-checkout-order__right">
+														<div class="product-checkout-order__quantity quantity">
+															<button type="button" class="quantity__button quantity__button_minus _icon-arrow"></button>
+															<div class="quantity__input">
+																<input autocomplete="off" type="text" name="form[]" value="2">
+															</div>
+															<button type="button" class="quantity__button quantity__button_plus _icon-arrow"></button>
+														</div>
+														<div class="product-checkout-order__sum">
+															<div class="product-checkout-order__price-new">12 562 ₽</div>
+														</div>
+														<div class="product-checkout-order__clear _icon-close"></div>
+													</div>
+												</div>
+											</div>
+											<div class="product-checkout-order__column">
+												<div class="product-checkout-order__item">
+													<div class="product-checkout-order__left">
+														<a href="#" class="product-checkout-order__image">
+															<img data-src="../img/product/product-1.webp" srcset="../img/product/product-1.webp 1x, ../img/product/product-1@2x.webp 2x" alt="">
+														</a>
+														<div class="product-checkout-order__text">
+															<a href="#" class="product-checkout-order__title">Переходник UGREEN MD115 Mini DP/HDMI + VGA Converter</a>
+															<div class="product-checkout-order__code">Код: 20421</div>
+														</div>
+													</div>
+													<div class="product-checkout-order__right">
+														<div class="product-checkout-order__quantity quantity">
+															<button type="button" class="quantity__button quantity__button_minus _icon-arrow"></button>
+															<div class="quantity__input">
+																<input autocomplete="off" type="text" name="form[]" value="1">
+															</div>
+															<button type="button" class="quantity__button quantity__button_plus _icon-arrow"></button>
+														</div>
+														<div class="product-checkout-order__sum">
+															<div class="product-checkout-order__price-new">12 562 ₽</div>
+															<div class="product-checkout-order__price-old">
+																<s>15 999 ₽</s>
+																<div class="product-checkout-order__sale">-50%</div>
+															</div>
+														</div>
+														<div class="product-checkout-order__clear _icon-close"></div>
+													</div>
+												</div>
+											</div>
+											<div class="product-checkout-order__column">
+												<div class="product-checkout-order__item">
+													<div class="product-checkout-order__left">
+														<a href="#" class="product-checkout-order__image">
+															<img data-src="../img/product/product-3.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x" alt="">
+														</a>
+														<div class="product-checkout-order__text">
+															<a href="#" class="product-checkout-order__title">Переходник UGREEN MD115 Mini DP/HDMI + VGA Converter</a>
+															<div class="product-checkout-order__code">Код: 20421</div>
+														</div>
+													</div>
+													<div class="product-checkout-order__right">
+														<div class="product-checkout-order__quantity quantity">
+															<button type="button" class="quantity__button quantity__button_minus _icon-arrow"></button>
+															<div class="quantity__input">
+																<input autocomplete="off" type="text" name="form[]" value="25">
+															</div>
+															<button type="button" class="quantity__button quantity__button_plus _icon-arrow"></button>
+														</div>
+														<div class="product-checkout-order__sum">
+															<div class="product-checkout-order__price-new">122 562 ₽</div>
+														</div>
+														<div class="product-checkout-order__clear _icon-close"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="checkout-left-order__info info-checkout-order">
+											<div class="info-checkout-order__column">
+												<h4 class="info-checkout-order__h4 h4">1. Контактная информация</h4>
+												<div class="info-checkout-order__inputs">
+													<div class="info-checkout-order__input">
+														<input data-validate type="name" name="form[]" placeholder="Имя*">
+													</div>
+													<div class="info-checkout-order__input">
+														<input type="sity" name="form[]" placeholder="Город">
+													</div>
+													<div class="info-checkout-order__input">
+														<input type="email" name="form[]" placeholder="Электронная почта">
+													</div>
+													<div class="info-checkout-order__input">
+														<input data-validate placeholder="+993" value="+993" id="tel" type="text" name="form[]">
+													</div>
+												</div>
+											</div>
+											<!--Способ оплаты
+											<div class="info-checkout-order__column">
+												<h4 class="info-checkout-order__h4 h4">2. Способ оплаты</h4>
+												<div class="info-checkout-order__options info-checkout-options">
+													<div class="info-checkout-options__option">
+														<div class="info-checkout-options__item">
+															<input hidden id="o_1" class="info-checkout-options__input" checked type="radio" value="1" name="option_1">
+															<label for="o_1" class="info-checkout-options__label">
+																<div class="info-checkout-options__text">
+																	<span class="info-checkout-options__title">Безналичный расчет</span>
+																	<span class="info-checkout-options__subtitle">Карты VISA/Mastercard</span>
+																</div>
+															</label>
+														</div>
+													</div>
+													<div class="info-checkout-options__option">
+														<div class="info-checkout-options__item">
+															<input hidden id="o_2" class="info-checkout-options__input" type="radio" value="2" name="option_1">
+															<label for="o_2" class="info-checkout-options__label">
+																<div class="info-checkout-options__text">
+																	<span class="info-checkout-options__title">Оплата при получении</span>
+																	<span class="info-checkout-options__subtitle">Наличными в магазине</span>
+																</div>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											-->
+											<div class="info-checkout-order__column">
+												<h4 class="info-checkout-order__h4 h4">2. Дополнительная информация</h4>
+												<div class="info-checkout-order__textarea">
+													<textarea placeholder="Комментарий к заказу"></textarea>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="order__right right-order">
+								<div class="right-order__item">
+									<h4 class="right-order__h4 h4">Ваша корзина</h4>
+									<div class="right-order__body">
+										<div class="right-order__column">
+											<span class="right-order__text">Всего товаров</span>
+											<span class="right-order__border"></span>
+											<span class="right-order__number">3 товара</span>
+										</div>
+										<div class="right-order__column">
+											<span class="right-order__text">Сумма заказа</span>
+											<span class="right-order__border"></span>
+											<span class="right-order__number">12 562 ₽</span>
+										</div>
+										<div class="right-order__column">
+											<span class="right-order__text">Скидка</span>
+											<span class="right-order__border"></span>
+											<span class="right-order__number right-order-number-sale">1 562 ₽</span>
+										</div>
+										<div class="right-order__column">
+											<span class="right-order__text">Итого к оплате</span>
+											<span class="right-order__border"></span>
+											<span class="right-order__number right-order-number-total">11 562 ₽</span>
+										</div>
+										<a href="#" class="right-order__button button">Подтвердить заказ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
