@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Фильтр</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230818011012">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20230818011012" />
+</head>
+
+<body class="filter">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<ul>
+						<li>
+							<a href="#" class="_icon-pc">
+								Cборка ПК
+							</a>
+						</li>
+						<li>
+							<a data-popup="#repair-status" href="#">Сервис</a>
+						</li>
+						<li>
+							<a href="#">Доставка</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header__center center-header">
+				<div class="center-header__container">
+					<a href="#" class="center-header__logo">
+						<img data-src="img/icons/logo.svg" alt>
+					</a>
+					<div class="center-header__content">
+						<div class="center-header__column header-telephone">
+							<a href="tel:88002502525" class="center-header__tel-icon _icon-call"></a>
+							<div class="center-header__tel">
+								Бесплатные звонки
+								<a href="tel:88002502525" class="center-header__number">8 800 250 25 25</a>
+							</div>
+						</div>
+						<div class="center-header__column">
+							<a href="#" class="center-header__link _icon-pc">
+								<div><span>Сборка ПК</span></div>
+							</a>
+						</div>
+						<div class="center-header__column">
+							<a href="#" data-popup="#repair-status" class="center-header__link _icon-status-serves">
+								<div>
+									<span>Статус ремонта</span>
+								</div>
+							</a>
+						</div>
+						<div class="center-header__column">
+							<a href="#" class="center-header__link _icon-plane-engines">
+								<div>
+									<span>Международные заказы</span>
+								</div>
+							</a>
+						</div>
+						<a href="#" data-da=".menu-mob-header__basket, 767.98" class="center-header__column header-basket">
+							<div class="center-header__basket">
+								<div class="center-header__icon _icon-basket">
+									<span>5</span>
+								</div>
+								<span>Корзина</span>
+								<div class="center-header__amount">
+									<div class="center-header__amount-text">Сумма:</div>
+									<div class="center-header__total">12 562 ₽</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom bottom-header">
+				<div class="bottom-header__container">
+					<div class="bottom-header__catalog catalog-header">
+						<a href="#" class="catalog-header__title">
+							<div class="catalog-header__icon"><span></span></div>
+							<div class="catalog-header__title-text">Каталог <span>товаров</span></div>
+						</a>
+						<div class="catalog-header__block">
+							<ul class="catalog-header__list">
+								<li class="catalog-header__link">
+									<a href="#" class="catalog-header__subtitle _icon-pc-s">
+										Компьютеры моноблоки и ПО
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Моноблоки</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Персональные Компьютеры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Програмное обеспечения</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link">
+									<a href="#" class="catalog-header__subtitle _icon-server-s">
+										Коплектующие для ПК
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Процессоры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Материнские платы</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Ram для ПК</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Жёсткие диски для ПК</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Твердотельные накопители SSD, NWME</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Видеокарты</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Блоки питания для ПК</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Дисководы для ПК</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Корпусы для ПК</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Аксессуары для ПК</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link">
+									<a href="#" class="catalog-header__subtitle _icon-mouse-s">
+										Перефирия и аксессуары
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Проводные мышки</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Беспроводные мышки</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Проводные клавиатуры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Беспроводные клавиатуры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Комплекты клавиатуры мышь и ТД.</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Коврики для мыши</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Колонки</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Компьютерные кресла и столы</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Наклейки на клавиатуры</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link">
+									<a href="#" class="catalog-header__subtitle _icon-notebook-s">
+										Ноутбуки и ультрабуки
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">MacBook</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Ноутбуки</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Ультрабуки</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Сумки для ноутбуков</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Рюкзаки для ноутбуков</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Охлаждающая система для ноутбуков</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Внешние дисководы</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Аксессуары</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link">
+									<a href="#" class="catalog-header__subtitle _icon-notebook-acc-s">
+										Запчасти для ноутбуков
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Экраны для ноутбука</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Ram для ноутбуков</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Жёсткие диски для ноутбуков</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Дисководы для ноутбуков</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Клавиатуры для ноутбуков</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Твердотельные накапители SSD</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Аккумуляторы для ноутбуков</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Зарядные устройства для ноутбуков</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Прочее</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link">
+									<a href="#" class="catalog-header__subtitle _icon-printer-s">
+										Офисная техника
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Струйные принтеры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Лазерные принтеры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Матричные принтеры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Сканеры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Расходные материалы</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Прочее</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link">
+									<a href="#" class="catalog-header__subtitle _icon-satellite-dish-s">
+										Сетевое оборудование
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Роутеры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Свитчи</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Усилители сигнала</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">WiFi Bluetooth приемники</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Модемы и портативные роутеры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Прочее</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link">
+									<a href="#" class="catalog-header__subtitle _icon-audio-s">
+										Аудиотехника
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Наушники для ПК</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Беспроводные наушники</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Колонки для ПК</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Портативные колонки</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link">
+									<a href="#" class="catalog-header__subtitle _icon-usb-drive-s">
+										Накопители и хабы
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Карты памяти SD</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Флешки</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Внешние Жёсткие диски</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Внешние накопители SSD</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Корпусы для жёстких дисков</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Чехлы для жёстких дисков</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Карт лидеры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Множители портов (Usb hub)</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link catalog-header-sorted">
+									<a href="#" class="catalog-header__subtitle _icon-barcode-read-s">
+										Автоматизации
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Чек принтера</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Баркод принтера</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Сканеры штрих-кодов</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Кассы (терминалы и ящики для денег)</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Весы</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Расходные материалы</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link catalog-header-sorted">
+									<a href="#" class="catalog-header__subtitle _icon-cash-register-s">
+										Cчётные машинки
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Счётные машинки</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Детекторы купюр</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link catalog-header-sorted">
+									<a href="#" class="catalog-header__subtitle _icon-power-ups-s">
+										Бесперебойное питания(UPS, AVR)
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">AVR (автоматический регулятор напряжения)</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">UPS (ИБП)</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Батареи для UPS</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Сетевые фильтры</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link catalog-header-sorted">
+									<a href="#" class="catalog-header__subtitle _icon-shredder-s">
+										Картриджи и расходники
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Картриджи для лазерных принтеров </a>
+											<ul>
+												<li><a href="#">black HP/canon</a></li>
+												<li><a href="#">black Samsung</a></li>
+												<li><a href="#">black Xerox</a></li>
+												<li><a href="#">color HP/Canon</a></li>
+												<li><a href="#">color Samsung</a></li>
+												<li><a href="#">color Xerox</a></li>
+											</ul>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Краски для струйных принтеров</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Струйные картриджи</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Тонеры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Чипы/chip</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link catalog-header-sorted">
+									<a href="#" class="catalog-header__subtitle _icon-camera-cctv-s">
+										Видеонаблюдения
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Домофоны и электронные замки </a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">AHD камеры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">IP камеры</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">NVR и DVR</a>
+										</div>
+									</div>
+								</li>
+								<li class="catalog-header__link catalog-header-sorted">
+									<a href="#" class="catalog-header__subtitle _icon-repeir-s">
+										Услуги
+									</a>
+									<div class="catalog-header__items">
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Активация и установка Виндоус</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Ремонт-сброс струйных принтеров (Epson)</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Ремонт и восстановление жёстких дисков и Флеш накопителей</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Профилактика и ремонт ноутбуков и ПК</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Ремонт систем автоматизации</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Заправки картриджей</a>
+										</div>
+										<div class="catalog-header__item">
+											<a href="#" class="catalog-header__subsubtitle">Замена ламп проэкторов</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<button type="button" class="catalog-header__more">
+								<span class="_icon-arrow">Показать еще</span>
+								<span class="_icon-arrow">Скрыть</span>
+							</button>
+						</div>
+					</div>
+					<div class="bottom-header__search">
+						<div class="bottom-header__inputs">
+							<div class="bottom-header__icon _icon-search"></div>
+							<input autocomplete="off" type="text" name="form[]" placeholder="Что ищем...?" class="bottom-header__input">
+							<button type="submit">Найти</button>
+							<div data-simplebar class="search-header__content">
+								<div class="search-header__column">
+									<ul>
+										<li>
+											<a href="#">Комплект <strong>Bos</strong>ch Twin Spoiler 281S</a>
+										</li>
+										<li>
+											<a href="#">Комплект <strong>Bos</strong>ch Twin Spoiler 381S</a>
+										</li>
+										<li>
+											<a href="#"><strong>Bos</strong>ch Twin Spoiler 281S</a>
+										</li>
+										<li>
+											<a href="#">Комплект <strong>Bos</strong>ch Twin Spoiler 281S</a>
+										</li>
+										<li>
+											<a href="#">Комплект <strong>Bos</strong>ch Twin Spoiler 281S</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu-mob menu-mob-header">
+				<div class="menu-mob-header__column">
+					<a href="#" class="menu-mob-header__home">
+						<div class="menu-mob-header__icon _icon-home">
+							<span>Главная</span>
+						</div>
+					</a>
+				</div>
+				<div class="menu-mob-header__column">
+					<a href="#" class="menu-mob-header__catalog">
+						<div class="menu-mob-header__icon _icon-catalog-search">
+							<span>Каталог</span>
+						</div>
+					</a>
+				</div>
+				<div class="menu-mob-header__column">
+					<div class="menu-mob-header__basket"></div>
+				</div>
+				<div class="menu-mob-header__column">
+					<div class="menu-mob-header__burger">
+						<div class="menu-mob-header__burger-icons">
+							<div class="icon-menu"><span></span></div>
+						</div>
+						<span>Меню</span>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu menu">
+				<nav class="menu__body">
+					<div class="menu__column">
+						<div class="menu__title">Покупателю</div>
+						<div class="menu__content">
+							<a href="#">Сервис</a>
+							<a href="#">Cборка ПК</a>
+							<a href="#">Международные заказы</a>
+						</div>
+					</div>
+					<div class="menu__column">
+						<div class="menu__title">Информация</div>
+						<div class="menu__content">
+							<a href="#">Сервис</a>
+							<a href="#">Cборка ПК</a>
+							<a href="#">Международные заказы</a>
+						</div>
+					</div>
+					<div class="menu__column">
+						<div class="menu__title">Компания</div>
+						<div class="menu__content">
+							<a href="#">О нас</a>
+							<a href="#">Контакты</a>
+							<a href="#">Войти как партнёр</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="page">
+			<div class="breadcrambs">
+				<div class="breadcrambs__container">
+					<div class="breadcrambs__content">
+						<ul>
+							<li><a href="#">Главная<span>/</span></a></li>
+							<li><a href="#">Каталог<span>/</span></a></li>
+							<li><a href="#">Телевизоры и аксессуары<span>/</span></a></li>
+							<li><span>Телевизоры</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page__filter filter">
+				<div class="filter__container">
+					<h1 class="filter__h1 h1">Телевизоры</h1>
+					<div class="filter__body">
+						<div class="filter__filter-block">
+							<div class="filter__filter-block-mob filter-block-mob">
+								<div class="filter-block-mob__title">
+									Фильтры
+									<span class="filter-block-mob__close _icon-close"></span>
+								</div>
+								<div class="filter-block-mob__clear"><span>Отчистить фильтры</span></div>
+								<div class="filter-block-mob__button">
+									<a href="#">Показать 6 522 товара</a>
+								</div>
+							</div>
+							<div class="filter__filter-block-spollers">
+								<div data-spollers class="filter__spollers spollers-filter">
+									<div class="spollers-filter__item">
+										<button type="button" data-spoller class="spollers-filter__title _icon-arrow">Цена, ₽</button>
+										<div class="spollers-filter__body">
+											<div class="spollers-filter__rating">
+												<div class="rating__values">
+													<div class="rating__value">
+														<input id="price-start" type="text">
+														<label for="price-start" class="price-lbl">от<span>4 586</span></label>
+													</div>
+													<div class="rating__value">
+														<input id="price-end" type="text">
+														<label for="price-end" class="price-lbl">до<span>344 586</span></label>
+													</div>
+												</div>
+												<div class="rating__range"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div data-spollers class="filter__spollers spollers-filter">
+									<div class="spollers-filter__item">
+										<button type="button" data-spoller class="spollers-filter__title _icon-arrow">Акции</button>
+										<div class="spollers-filter__body">
+											<div data-showmore class="spollers-filter__showmore showmore-spollers-filter">
+												<div data-showmore-content="185" class="showmore-spollers-filter__content">
+													<div class="showmore-spollers-filter__checkboxes">
+														<div class="showmore-spollers-filter__checkbox">
+															<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+															<label for="c_1" class="checkbox__label">
+																<span class="checkbox__text">Доступные в рассрочку</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">42</span>
+															</label>
+														</div>
+														<div class="showmore-spollers-filter__checkbox">
+															<input id="c_2" class="checkbox__input" type="checkbox" value="2" name="form[]">
+															<label for="c_2" class="checkbox__label">
+																<span class="checkbox__text">Скидка до 50%</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">102</span>
+															</label>
+														</div>
+													</div>
+												</div>
+												<button hidden data-showmore-button type="button" class="showmore-spollers-filter__more">
+													<span>Показать еще</span>
+													<span>Скрыть</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div data-spollers class="filter__spollers spollers-filter">
+									<div class="spollers-filter__item">
+										<button type="button" data-spoller class="spollers-filter__title _icon-arrow">Производители</button>
+										<div class="spollers-filter__body">
+											<div data-showmore class="spollers-filter__showmore showmore-spollers-filter">
+												<div data-showmore-content="185" class="showmore-spollers-filter__content">
+													<div class="showmore-spollers-filter__checkboxes">
+														<div class="showmore-spollers-filter__checkbox checkbox">
+															<input id="c_3" class="checkbox__input" type="checkbox" value="3" name="form[1]">
+															<label for="c_3" class="checkbox__label">
+																<span class="checkbox__text">Samsung</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">12</span>
+															</label>
+														</div>
+														<div class="showmore-spollers-filter__checkbox checkbox">
+															<input id="c_4" class="checkbox__input" type="checkbox" value="4" name="form[1]">
+															<label for="c_4" class="checkbox__label">
+																<span class="checkbox__text">Lg</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">10</span>
+															</label>
+														</div>
+														<div class="showmore-spollers-filter__checkbox checkbox">
+															<input id="c_5" class="checkbox__input" type="checkbox" value="5" name="form[1]">
+															<label for="c_5" class="checkbox__label">
+																<span class="checkbox__text">Sony</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">6</span>
+															</label>
+														</div>
+														<div class="showmore-spollers-filter__checkbox checkbox">
+															<input disabled id="c_6" class="checkbox__input" type="checkbox" value="6" name="form[1]">
+															<label for="c_6" class="checkbox__label">
+																<span class="checkbox__text">Philips</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">0</span>
+															</label>
+														</div>
+														<div class="showmore-spollers-filter__checkbox">
+															<input id="c_7" class="checkbox__input" type="checkbox" value="7" name="form[1]">
+															<label for="c_7" class="checkbox__label">
+																<span class="checkbox__text">Hundai</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">4</span>
+															</label>
+														</div>
+														<div class="showmore-spollers-filter__checkbox">
+															<input id="c_8" class="checkbox__input" type="checkbox" value="8" name="form[1]">
+															<label for="c_8" class="checkbox__label">
+																<span class="checkbox__text">Hair</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">12</span>
+															</label>
+														</div>
+														<div class="showmore-spollers-filter__checkbox">
+															<input id="c_9" class="checkbox__input" type="checkbox" value="9" name="form[1]">
+															<label for="c_9" class="checkbox__label">
+																<span class="checkbox__text">Supra</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">17</span>
+															</label>
+														</div>
+														<div class="showmore-spollers-filter__checkbox">
+															<input id="c_10" class="checkbox__input" type="checkbox" value="10" name="form[1]">
+															<label for="c_10" class="checkbox__label">
+																<span class="checkbox__text">Supra</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">17</span>
+															</label>
+														</div>
+														<div class="showmore-spollers-filter__checkbox">
+															<input id="c_11" class="checkbox__input" type="checkbox" value="11" name="form[1]">
+															<label for="c_11" class="checkbox__label">
+																<span class="checkbox__text">Supra</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">17</span>
+															</label>
+														</div>
+													</div>
+												</div>
+												<button hidden data-showmore-button type="button" class="showmore-spollers-filter__more">
+													<span>Показать еще</span>
+													<span>Скрыть</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div data-spollers class="filter__spollers spollers-filter">
+									<div class="spollers-filter__item">
+										<button type="button" data-spoller class="spollers-filter__title _icon-arrow">Диагональ</button>
+										<div class="spollers-filter__body">
+											<div data-showmore class="spollers-filter__showmore showmore-spollers-filter">
+												<div data-showmore-content="185" class="showmore-spollers-filter__content">
+													<div class="showmore-spollers-filter__checkboxes">
+														<div class="showmore-spollers-filter__checkbox">
+															<input id="c_12" class="checkbox__input" type="checkbox" value="12" name="form[2]">
+															<label for="c_12" class="checkbox__label">
+																<span class="checkbox__text">Hundai</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">42</span>
+															</label>
+														</div>
+														<div class="showmore-spollers-filter__checkbox">
+															<input id="c_13" class="checkbox__input" type="checkbox" value="13" name="form[2]">
+															<label for="c_13" class="checkbox__label">
+																<span class="checkbox__text">Hundai</span>
+																<span class="checkbox__border"></span>
+																<span class="checkbox__quantity">102</span>
+															</label>
+														</div>
+													</div>
+												</div>
+												<button hidden data-showmore-button type="button" class="showmore-spollers-filter__more">
+													<span>Показать еще</span>
+													<span>Скрыть</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter__content">
+							<div class="filter__content-block">
+								<div class="filter__tabs tabs-filter">
+									<div class="tabs-filter__top">
+										<div class="tabs-filter__filter-block-icon _icon-filter"></div>
+										<div class="tabs-filter__sorted sorted-filter">
+											<div class="sorted-filter__title">Сортировать:</div>
+											<div class="sorted-filter__body">
+												<div class="sorted-filter__column _active">
+													<span>По популярности</span>
+												</div>
+												<div class="sorted-filter__column">
+													<a href="#">По возрастанию цены</a>
+												</div>
+												<div class="sorted-filter__column">
+													<a href="#">По убыванию цены</a>
+												</div>
+												<div class="sorted-filter__column">
+													<a href="#">По размеру скидки</a>
+												</div>
+												<div class="sorted-filter__column">
+													<a href="#">По новизне</a>
+												</div>
+											</div>
+										</div>
+										<div class="tabs-filter__select">
+											<select name="form[]">
+												<option value="1" selected>По популярности</option>
+												<option value="2">По возрастанию цены</option>
+												<option value="3">По убыванию цены</option>
+												<option value="4">По размеру скидки</option>
+												<option value="5">По новизне</option>
+											</select>
+										</div>
+										<nav class="tabs-filter__navigation">
+											<button type="button" class="tabs-filter__title _icon-sort-tile _tab-active"></button>
+											<button type="button" class="tabs-filter__title">
+												<div class="tabs-filter__sort-list"><span></span></div>
+											</button>
+										</nav>
+									</div>
+									<div class="tabs-filter__content">
+										<div class="tabs-filter__body">
+											<div class="tabs-filter__slides">
+												<div class="tabs-filter__slide slide-product">
+													<div class="slide-product__item">
+														<a href="#" class="slide-product__image">
+															<img data-src="img/product/product-2.webp" srcset="img/product/product-2.webp 1x, img/product/product-2@2x.webp 2x" alt>
+														</a>
+														<div class="slide-product__content">
+															<a href="#" class="slide-product__title">Переходник UGREEN MD115 Mini DP/HDMI + VGA Converter</a>
+															<div class="slide-product__content-bottom">
+																<div class="slide-product__top">
+																	<div class="slide-product__code">Код: 20421</div>
+																	<div data-showmore class="slide-product__showmore">
+																		<div data-showmore-content="90" class="slide-product__showmore-content">
+																			Материнская плата: <span>B660M;</span>
+																			Процессор:<span>Intel Core i3-12100F;</span>
+																			Охлаждение:<span>Air TDP 130 Вт;</span>
+																			Оперативная память:<span>16 Гб D4 3200 (2x8);</span>
+																			Видео-карта: <span>NVIDIA GeForce RTX 3050 8 Гб;</span>
+																			SSD: <span>1 Tб M.2;</span>
+																			Корпус: <span>Zalman T6 Black;</span>
+																			Блок питания: <span>500 Вт;</span>
+																		</div>
+																		<button hidden data-showmore-button type="button" class="slide-product__more">
+																			<span class="_icon-arrow">
+																				<div>Читать полностью</div>
+																			</span>
+																			<span class="_icon-arrow">
+																				<div>Скрыть</div>
+																			</span>
+																		</button>
+																	</div>
+																</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__stock _icon-check">В наличии</div>
+																	<div class="slide-product__totals">
+																		<div class="slide-product__total">
+																			<div class="slide-product__price-new">12 562 ₽</div>
+																		</div>
+																		<div class="slide-product__basket">
+																			<a href="#" class="slide-product__button _icon-cart-plus">
+																				<span>Добавить в корзину</span>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="slide-product__shadow"></div>
+												</div>
+												<div class="tabs-filter__slide slide-product">
+													<div class="slide-product__item">
+														<a href="#" class="slide-product__image">
+															<img data-src="img/product/product-1.webp" srcset="img/product/product-1.webp 1x, img/product/product-1@2x.webp 2x" alt>
+														</a>
+														<div class="slide-product__content">
+															<a href="#" class="slide-product__title">Переходник UGREEN MD115 Mini DP/HDMI + VGA Converter</a>
+															<div class="slide-product__content-bottom">
+																<div class="slide-product__top">
+																	<div class="slide-product__code">Код: 20421</div>
+																	<div data-showmore class="slide-product__showmore">
+																		<div data-showmore-content="90" class="slide-product__showmore-content">
+																			Материнская плата: <span>B660M;</span>
+																			Процессор:<span>Intel Core i3-12100F;</span>
+																			Охлаждение:<span>Air TDP 130 Вт;</span>
+																			Оперативная память:<span>16 Гб D4 3200 (2x8);</span>
+																			Видео-карта: <span>NVIDIA GeForce RTX 3050 8 Гб;</span>
+																			SSD: <span>1 Tб M.2;</span>
+																			Корпус: <span>Zalman T6 Black;</span>
+																			Блок питания: <span>500 Вт;</span>
+																		</div>
+																		<button hidden data-showmore-button type="button" class="slide-product__more">
+																			<span class="_icon-arrow">
+																				<div>Читать полностью</div>
+																			</span>
+																			<span class="_icon-arrow">
+																				<div>Скрыть</div>
+																			</span>
+																		</button>
+																	</div>
+																</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__stock _icon-check">В наличии</div>
+																	<div class="slide-product__totals">
+																		<div class="slide-product__total">
+																			<div class="slide-product__price-new">12 562 ₽</div>
+																			<div class="slide-product__price-old">
+																				<s>15 999 ₽</s>
+																				<div class="slide-product__sale">-50%</div>
+																			</div>
+																		</div>
+																		<div class="slide-product__basket">
+																			<a href="#" class="slide-product__button _icon-cart-plus">
+																				<span>Добавить в корзину</span>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="slide-product__time-count">
+														<div class="time-count__title">Акция</div>
+														<div class="time-count__content">
+															<div class="time-count__item time-count__days">
+																<div class="time-count__val">00</div>
+																<div class="time-count__text">д</div>
+															</div>
+															<div class="time-count__separator">:</div>
+															<div class="time-count__item time-count__hours">
+																<div class="time-count__val">00</div>
+																<div class="time-count__text">ч</div>
+															</div>
+															<div class="time-count__separator">:</div>
+															<div class="time-count__item time-count__minutes">
+																<div class="time-count__val">00</div>
+																<div class="time-count__text">м</div>
+															</div>
+															<div class="time-count__separator">:</div>
+															<div class="time-count__item time-count__seconds">
+																<div class="time-count__val">00</div>
+																<div class="time-count__text">с</div>
+															</div>
+														</div>
+													</div>
+													<div class="slide-product__shadow"></div>
+												</div>
+												<div class="tabs-filter__slide slide-product">
+													<div class="slide-product__item">
+														<a href="#" class="slide-product__image">
+															<img data-src="img/product/product-3.webp" srcset="img/product/product-3.webp 1x, img/product/product-3@2x.webp 2x" alt>
+														</a>
+														<div class="slide-product__content">
+															<a href="#" class="slide-product__title">Переходник UGREEN MD115 Mini DP/HDMI + VGA Converter</a>
+															<div class="slide-product__content-bottom">
+																<div class="slide-product__top">
+																	<div class="slide-product__code">Код: 20421</div>
+																	<div data-showmore class="slide-product__showmore">
+																		<div data-showmore-content="90" class="slide-product__showmore-content">
+																			Материнская плата: <span>B660M;</span>
+																			Процессор:<span>Intel Core i3-12100F;</span>
+																			Охлаждение:<span>Air TDP 130 Вт;</span>
+																			Оперативная память:<span>16 Гб D4 3200 (2x8);</span>
+																			Видео-карта: <span>NVIDIA GeForce RTX 3050 8 Гб;</span>
+																			SSD: <span>1 Tб M.2;</span>
+																			Корпус: <span>Zalman T6 Black;</span>
+																			Блок питания: <span>500 Вт;</span>
+																		</div>
+																		<button hidden data-showmore-button type="button" class="slide-product__more">
+																			<span class="_icon-arrow">
+																				<div>Читать полностью</div>
+																			</span>
+																			<span class="_icon-arrow">
+																				<div>Скрыть</div>
+																			</span>
+																		</button>
+																	</div>
+																</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__stock _icon-check">В наличии</div>
+																	<div class="slide-product__totals">
+																		<div class="slide-product__total">
+																			<div class="slide-product__price-new">12 562 ₽</div>
+																		</div>
+																		<div class="slide-product__basket">
+																			<a href="#" class="slide-product__button _icon-cart-plus">
+																				<span>Добавить в корзину</span>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="slide-product__shadow"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filter__pagination pagination-filter">
+								<span class="pagination-filter__arrow">
+									<span class="pagination-filter__arrow-prev _icon-arrow"></span>
+								</span>
+								<span class="pagination-filter__number _active-pagination">1</span>
+								<a href="#" class="pagination-filter__number">2</a>
+								<a href="#" class="pagination-filter__number">3</a>
+								<span class="pagination-filter__number number-dots">...</span>
+								<a href="#" class="pagination-filter__number">24</a>
+								<a href="#" class="pagination-filter__number">25</a>
+								<a href="#" class="pagination-filter__number">26</a>
+								<a href="#" class="pagination-filter__arrow">
+									<span class="pagination-filter__arrow-next _icon-arrow"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__top top-footer">
+				<div class="top-footer__container">
+					<div data-da=".bottom-footer__container, 767.98" class="top-footer__left">
+						<a href="#" class="top-footer__logo">
+							<img data-src="img/icons/logo.svg" alt="">
+						</a>
+						<div class="top-footer__sublogo-text">©2023 AKJA-electronics.<br> Все права защищены.</div>
+						<div class="top-footer__socials-se">
+							<a href="#" class="top-footer__social-se _icon-vk"></a>
+							<a href="#" class="top-footer__social-se _icon-youtube"></a>
+							<a href="#" class="top-footer__social-se _icon-instagram"></a>
+						</div>
+					</div>
+					<div class="top-footer__center">
+						<div class="top-footer__body">
+							<div class="top-footer__column">
+								<div class="top-footer__title-list">Покупателю</div>
+								<ul>
+									<li><a data-popup="#repair-status" href="#">Сервис</a></li>
+									<li><a href="#">Cборка ПК</a></li>
+									<li><a href="#">Международные заказы</a></li>
+								</ul>
+							</div>
+							<div class="top-footer__column">
+								<div class="top-footer__title-list">Компания</div>
+								<ul>
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Войти как партнёр</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="top-footer__right write-top-footer">
+						<div class="write-top-footer__messages">
+							<div class="write-top-footer__message">
+								<a href="tel:88002502525" class="_icon-phone-old">
+									8 800 250 25 25
+								</a>
+							</div>
+							<div class="write-top-footer__message">
+								<a href="#" class="_icon-chat">
+									Чат с оператором
+								</a>
+							</div>
+							<div class="write-top-footer__message">
+								<a href="#" class="_icon-mail">
+									Через сайт
+								</a>
+							</div>
+						</div>
+						<div class="write-top-footer__socials">
+							<div class="write-top-footer__social-title">Напишите нам в мессенджеры</div>
+							<div class="write-top-footer__social">
+								<a href="#" class="_icon-viber"></a>
+								<a href="#" class="_icon-telegram"></a>
+								<a href="#" class="_icon-whatsapp"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<div class="bottom-footer__left">
+						<div class="bottom-footer__pay">
+							<img data-src="img/pay-1.png" srcset="img/pay-1.png 1x, img/pay-1@2x.png 2x" alt="">
+						</div>
+						<div class="bottom-footer__pay">
+							<img data-src="img/pay-2.png" srcset="img/pay-2.png 1x, img/pay-2@2x.png 2x" alt="">
+						</div>
+						<div class="bottom-footer__pay">
+							<img data-src="img/pay-3.png" srcset="img/pay-3.png 1x, img/pay-3@2x.png 2x" alt="">
+						</div>
+						<div class="bottom-footer__pay">
+							<img data-src="img/pay-4.png" srcset="img/pay-4.png 1x, img/pay-4@2x.png 2x" alt="">
+						</div>
+						<div class="bottom-footer__pay">
+							<img data-src="img/pay-5.png" srcset="img/pay-5.png 1x, img/pay-5@2x.png 2x" alt="">
+						</div>
+					</div>
+					<a href="#" class="bottom-footer__center">Политика конфиденциальности</a>
+					<div class="bottom-footer__right">
+						Сделано в
+						<a href="rusodot.ru" class="_icon-ruso"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="repair-status" aria-hidden="true" class="popup repair-status">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__repair-status repair-status">
+					<h4 class="repair-status__h4 h4">Статус ремонта</h4>
+					<div class="repair-status__subtitle">В рамках спецификации современных стандартов, реплицированные с зарубежных источников.</div>
+					<div class="repair-status__block">
+						<form action="#" class="repair-status__forms">
+							<div class="repair-status__input">
+								<input data-validate type="text" name="form[]" placeholder="Номер заказа*">
+							</div>
+							<div class="repair-status__input">
+								<input data-validate placeholder="+993" value="+993" id="tel" type="text" name="form[]">
+							</div>
+						</form>
+						<button class="repair-status__button button">Проверить статус ремонта</button>
+					</div>
+					<div class="repair-status__status">
+						<div class="repair-status__list">
+							<div class="repair-status__column">
+								Номер заказа:
+								<span>4565</span>
+							</div>
+							<div class="repair-status__column">
+								Номер телефона:
+								<span>+7 (585) 552-42-24</span>
+							</div>
+							<div class="repair-status__column">
+								Техника в ремонте:
+								<span>iPhone 12</span>
+							</div>
+							<div class="repair-status__column ">
+								Статус ремонта:
+								<span class="color-blue">В процессе</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230818011012"></script>
+</body>
+
+</html>
